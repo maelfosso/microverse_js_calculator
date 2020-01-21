@@ -4,7 +4,7 @@ This project help us to learn how to build a very simple React application. From
 This project is part of [microverse](https://www.microverse.org/) curriculum.
 
 ## Link
-
+https://mjscalculator.herokuapp.com/
 
 
 ## Set up
