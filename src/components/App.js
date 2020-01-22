@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div id="app" className="App">
-      <Display />
+      <Display result={'0'}/>
       <ButtonPanel />
     </div>
   );

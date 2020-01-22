@@ -1,15 +1,13 @@
 import React from 'react';
 
-class Display extends React.Component {
+class Button extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <div>{this.props.result}</div>
+      <div>{this.props.name}</div>
     );
   }
-  
 }
-export default Display;
