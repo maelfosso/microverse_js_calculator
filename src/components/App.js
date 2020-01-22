@@ -1,22 +1,13 @@
 import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Calculator APP
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Done with React
-        </a>
-      </header>
+    <div id="app" className="App">
+      <Display />
+      <ButtonPanel />
     </div>
   );
 }
