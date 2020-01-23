@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from './Button';
+import '../App.css';
 
 function ButtonPanel() {
   return (
-    <div id="button-panel">
+    <div id="button-panel" className="ButtonPanel">
       <div id="group-1">
         <Button name="AC" />
         <Button name="+/-" />

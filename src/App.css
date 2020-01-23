@@ -13,6 +13,17 @@
   box-sizing: border-box;
 }
 
+.ButtonPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.ButtonPanel div {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
