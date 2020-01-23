@@ -6,32 +6,32 @@ function ButtonPanel() {
   return (
     <div id="button-panel" className="ButtonPanel">
       <div id="group-1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
+        <Button name="AC" color="lightgrey" />
+        <Button name="+/-" color="lightgrey" />
+        <Button name="%" color="lightgrey" />
         <Button name="÷" />
       </div>
       <div id="group-2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
+        <Button name="7" color="lightgrey" />
+        <Button name="8" color="lightgrey" />
+        <Button name="9" color="lightgrey" />
         <Button name="X" />
       </div>
       <div id="group-3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
+        <Button name="4" color="lightgrey" />
+        <Button name="5" color="lightgrey" />
+        <Button name="6" color="lightgrey" />
         <Button name="-" />
       </div>
       <div id="group-4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
+        <Button name="1" color="lightgrey" />
+        <Button name="2" color="lightgrey" />
+        <Button name="3" color="lightgrey" />
         <Button name="+" />
       </div>
       <div id="group-5">
-        <Button name="0" />
-        <Button name="." />
+        <Button name="0" wide={true} color="lightgrey" />
+        <Button name="." color="lightgrey" />
         <Button name="=" />
       </div>
     </div>
