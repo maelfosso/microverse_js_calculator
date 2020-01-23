@@ -11,6 +11,9 @@
   text-align: right;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .ButtonPanel {
@@ -22,6 +25,20 @@
   height: 100px;
   display: flex;
   flex-direction: row;
+}
+
+.Button {
+  width: 25%;
+  text-align: center;
+  color: black;
+  border: 1px grey solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonPanel div#group-5 .Button:first-child {
+  width: 50%;
 }
 
 .App-logo {
