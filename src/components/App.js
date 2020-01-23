@@ -3,13 +3,15 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import '../App.css';
 
-function App() {
-  return (
-    <div id="app" className="App">
-      <Display />
-      <ButtonPanel />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div id="app" className="App">
+        <Display />
+        <ButtonPanel />
+      </div>
+    );
+  }
 }
 
 export default App;
