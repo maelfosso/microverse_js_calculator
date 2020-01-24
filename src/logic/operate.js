@@ -1,8 +1,8 @@
-import Big from './big.mjs';
+import Big from 'big';
 
 const operate = (numberOne, numberTwo, operation) => {
-  let x = Big(numberOne);
-  let y = Big(numberTwo);
+  const x = Big(numberOne);
+  const y = Big(numberTwo);
   switch (operation) {
     case '+/-':
       return x.times(y).times(-1);
@@ -25,6 +25,6 @@ const operate = (numberOne, numberTwo, operation) => {
     default:
       return null;
   }
-}
+};
 
 export default operate;
