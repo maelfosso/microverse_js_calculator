@@ -16,16 +16,16 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (buttonName) => {
+  handleClick(buttonName) {
     const { total, next, operation } = this.state;
     const data = { total, next, operation };
-    
+
     this.setState({ ...calculate(data, buttonName) });
   }
 
   render() {
     const { total, next, operation } = this.state;
-    const result = (total == null ? '' : total) + (operation === null ? '' : operation) + '' + (next === null ? '' : next);
+    const result = `${(total == null ? '' : total) + (operation === null ? '' : operation)}${next === null ? '' : next}`;
     return (
       <div id="app" className="App">
         <Display result={result === '' ? '0' : result} />

@@ -33,7 +33,6 @@ const operate = (numberOne, numberTwo, operation) => {
       result = null;
   }
 
-  console.log(numberOne, numberTwo, operation, result);
   return result;
 };
 

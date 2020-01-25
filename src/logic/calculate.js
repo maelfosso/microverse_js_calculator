@@ -5,7 +5,7 @@ const calculate = (data, buttonName) => {
   const digits = [...'0123456789.'];
   const biops = [...'%÷X-+'];
   const unops = ['%', '+/-'];
-  
+
   if (digits.includes(buttonName)) {
     return {
       total,
