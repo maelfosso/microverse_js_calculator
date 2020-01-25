@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../App.css';
 
-function Button(props) {
-  const { name, color, wide } = props;
+const Button = (props) => {
+  const { name, color, wide, clickHandler } = props;
   const width = wide ? '50%' : '25%';
   const style = { backgroundColor: color, width };
-  return <div className="Button" style={style}>{name}</div>;
+
+  // const handleClick = ({ name }) => clickHandler(name);
+
+  return <div className="Button" style={style} onClick={() => clickHandler()}>{name}</div>;
 }
 Button.defaultProps = {
   color: 'orange',
