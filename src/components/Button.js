@@ -7,9 +7,9 @@ const Button = (props) => {
   const width = wide ? '50%' : '25%';
   const style = { backgroundColor: color, width };
 
-  // const handleClick = ({ name }) => clickHandler(name);
+  const handleClick = () => clickHandler();
 
-  return <div className="Button" style={style} onClick={() => clickHandler()}>{name}</div>;
+  return <div className="Button" style={style} onClick={() => handleClick()}>{name}</div>;
 }
 Button.defaultProps = {
   color: 'orange',
