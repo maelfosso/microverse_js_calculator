@@ -11,8 +11,7 @@ const Button = (props) => {
 
   const handleClick = () => clickHandler(name);
 
-  /* eslint-disable jsx-a11y/click-events-have-key-events */
-  return <div role="button" tabIndex={name} className="Button" style={style} onClick={handleClick}>{name}</div>;
+  return <button type="button" tabIndex={name} className="Button" style={style} onClick={handleClick}>{name}</button>;
 };
 Button.defaultProps = {
   color: 'orange',
