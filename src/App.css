@@ -1,5 +1,49 @@
 .App {
+  width: 700px;
+  margin: auto;
+}
+
+.Display {
+  background-color: grey;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ButtonPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.ButtonPanel div {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Button {
   text-align: center;
+  color: black;
+  border: 1px grey solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background: red;
+  color: white;
 }
 
 .App-logo {
