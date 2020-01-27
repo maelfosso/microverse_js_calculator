@@ -9,22 +9,22 @@ const calculate = (data, buttonName) => {
   if (digits.includes(buttonName)) {
     return {
       total,
-      next: next + buttonName,
+      next: (next == null ? '' : next) + buttonName,
       operation,
     };
   }
   if (biops.includes(buttonName)) {
     return {
-      total,
-      next,
+      total: (total == null ? next : total),
+      next: null,
       operation: buttonName,
     };
   }
   if (unops.includes(buttonName)) {
     return {
-      total: operate(total, 1, buttonName),
-      next: '',
-      operation: buttonName,
+      total: operate((total == null ? next : total), 1, buttonName),
+      next: null,
+      operation: null,
     };
   }
   if (buttonName === 'AC') {
@@ -34,11 +34,17 @@ const calculate = (data, buttonName) => {
       operation: null,
     };
   }
-  return {
-    total: operate(total, next, buttonName),
-    next: '',
-    operation: buttonName,
-  };
+  if (total && next && operation) {
+    const result = operate(total, next, operation);
+    return {
+      total: result !== 'xxxx' ? result : null,
+      next: null,
+      operation: null,
+      error: result !== 'xxxx' ? null : 'Not allowed',
+    };
+  }
+
+  return null;
 };
 
 export default calculate;

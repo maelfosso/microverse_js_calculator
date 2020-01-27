@@ -37,6 +37,15 @@
   box-sizing: border-box;
 }
 
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background: red;
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
