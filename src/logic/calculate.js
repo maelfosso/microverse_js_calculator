@@ -34,11 +34,15 @@ const calculate = (data, buttonName) => {
       operation: null,
     };
   }
-  return {
-    total: operate(total, next, operation),
-    next: null,
-    operation: null,
-  };
+  if (total && next && operation) {
+    return {
+      total: operate(total, next, operation),
+      next: null,
+      operation: null,
+    };
+  }
+
+  return null;
 };
 
 export default calculate;

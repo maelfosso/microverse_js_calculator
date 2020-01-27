@@ -9,10 +9,10 @@ const Button = (props) => {
   const width = wide ? '50%' : '25%';
   const style = { backgroundColor: color, width };
 
-  const handleClick = () => clickHandler();
+  const handleClick = () => clickHandler(name);
 
   /* eslint-disable jsx-a11y/click-events-have-key-events */
-  return <div role="button" tabIndex={name} className="Button" style={style} onClick={() => handleClick()}>{name}</div>;
+  return <div role="button" tabIndex={name} className="Button" style={style} onClick={handleClick}>{name}</div>;
 };
 Button.defaultProps = {
   color: 'orange',
