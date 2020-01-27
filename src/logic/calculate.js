@@ -35,10 +35,12 @@ const calculate = (data, buttonName) => {
     };
   }
   if (total && next && operation) {
+    const result = operate(total, next, operation);
     return {
-      total: operate(total, next, operation),
+      total: result !== 'xxxx' ? result : null,
       next: null,
       operation: null,
+      error: result !== 'xxxx' ? null : "Not allowed",
     };
   }
 

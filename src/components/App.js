@@ -11,6 +11,7 @@ class App extends React.Component {
       total: null,
       next: null,
       operation: null,
+      error: null
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -25,11 +26,16 @@ class App extends React.Component {
     }
   }
 
+  renderError() {
+    return this.state.error && <div className="error">{this.state.error}</div>; 
+  }
+
   render() {
     const { total, next, operation } = this.state;
     const result = `${(total == null ? '' : total) + (operation === null ? '' : operation)}${next === null ? '' : next}`;
     return (
       <div id="app" className="App">
+        {this.renderError()}
         <Display result={result === '' ? '0' : result} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>

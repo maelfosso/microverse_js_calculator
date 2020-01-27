@@ -14,7 +14,11 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
 
     case '÷':
-      result = x.div(y);
+      if (y.eq(0)) {
+        result = 'xxxx';
+      } else {
+        result = x.div(y); 
+      }
       break;
 
     case 'X':
