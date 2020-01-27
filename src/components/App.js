@@ -11,7 +11,7 @@ class App extends React.Component {
       total: null,
       next: null,
       operation: null,
-      error: null
+      error: null,
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -27,7 +27,8 @@ class App extends React.Component {
   }
 
   renderError() {
-    return this.state.error && <div className="error">{this.state.error}</div>; 
+    const { error } = this.state;
+    return error && <div className="error">{error}</div>;
   }
 
   render() {

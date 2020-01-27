@@ -17,7 +17,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (y.eq(0)) {
         result = 'xxxx';
       } else {
-        result = x.div(y); 
+        result = x.div(y);
       }
       break;
 

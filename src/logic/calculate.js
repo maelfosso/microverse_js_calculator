@@ -40,7 +40,7 @@ const calculate = (data, buttonName) => {
       total: result !== 'xxxx' ? result : null,
       next: null,
       operation: null,
-      error: result !== 'xxxx' ? null : "Not allowed",
+      error: result !== 'xxxx' ? null : 'Not allowed',
     };
   }
 
