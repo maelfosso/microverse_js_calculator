@@ -1,19 +1,62 @@
-## Calculator
-This project help us to learn how to build a very simple React application. From the beginning to the deployment on HEROKU
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project is part of [microverse](https://www.microverse.org/) curriculum.
+# Calculator
 
-## Link
-https://mjscalculator.herokuapp.com/
+> Simple Calculator 
 
+![screenshot](./app_screenshot.png)
 
-## Set up
+All the simple operations are implemented
 
-To run the project:
+A full description of the project can be found [here](https://www.theodinproject.com/courses/web-development-101/lessons/calculator)
 
-- Clone the repository: _https://github.com/maelfosso/microverse_js_calculator
-- Run `npm install`. It will install all the dependencies required by the project
-- Run `npm start` to start the development server. It will automatically open the page in your default browser.
+## Built With
 
-## Contributors:
-[Mael FOSSO](https://github.com/maelfosso)
+- HTML5
+- CSS3
+- Javascript
+- React.js
+
+## Live Demo
+
+[Live Demo Link](https://mverse-js-calculator.herokuapp.com/)
+
+## Getting Started
+
+### Prerequisites
+
+You need to have these softwares and tools installed
+
+- Node.js
+- Yarn / NPM
+
+### Setup
+
+To get a local copy up and running follow these simple example steps.
+
+- Clone the repository `git clone https://github.com/maelfosso/microverse_js_calculator`
+- Change your current directory `cd microverse_js_calculator`
+- Install all the dependencies `yarn install`
+- Start the app `yarn start`
+
+## Authors
+
+👤 **Mael FOSSO**
+
+- GitHub: [@maelfosso](https://github.com/maelfosso)
+- Twitter: [@maelfosso](https://twitter.com/maelfosso)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mael-fosso-650b6346/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
