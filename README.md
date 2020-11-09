@@ -17,6 +17,10 @@ A full description of the project can be found [here](https://www.theodinproject
 - Javascript
 - React.js
 
+## Live Demo
+
+[Live Demo Link](https://mverse-js-calculator.herokuapp.com/)
+
 ## Getting Started
 
 ### Prerequisites
